@@ -4,7 +4,7 @@ import allure
 url = "https://reqres.in/api/users"
 data = {"name": "Péter", "job": "Criminal"}
 
-@allure.id("TC-01")
+@allure.id("TC-02")
 @allure.title("API post user")
 def test_api_post_user():
     response = requests.post(url, json=data)
