@@ -1,5 +1,0 @@
-id : 6
-email : tracey.ramos@reqres.in
-first_name : Tracey
-last_name : Ramos
-avatar : https://reqres.in/img/faces/6-image.jpg
