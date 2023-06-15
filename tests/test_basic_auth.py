@@ -21,6 +21,8 @@ class TestPopupLogin(object):
     def teardown_method(self):
         self.browser.quit()
 
+    @allure.id("TC-01")
+    @allure.title("API auth")
     def test_numberone(self):
         login_success = self.browser.find_element(By.TAG_NAME, "p").text
         assert login_success == "Congratulations! You must have the proper credentials."

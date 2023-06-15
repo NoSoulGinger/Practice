@@ -21,6 +21,8 @@ class TestSelect(object):
     def teardown_method(self):
         self.browser.quit()
 
+    @allure.id("TC-01")
+    @allure.title("Web listing test")
     def test_numberone(self):
         wait = WebDriverWait(self.browser, 5)
         list = wait.until(

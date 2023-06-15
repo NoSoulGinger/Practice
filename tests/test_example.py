@@ -6,7 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-
 class TestTeglalap(object):
     def setup_method(self):
         service = Service(executable_path=ChromeDriverManager().install())
@@ -20,6 +19,8 @@ class TestTeglalap(object):
     def teardown_method(self):
         self.browser.quit()
 
+    @allure.id("TC-01")
+    @allure.title("Web test")
     def test_one(self):
         def fill_data(a_data, b_data, exp_result):
             wait = WebDriverWait(self.browser, 2)

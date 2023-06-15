@@ -8,7 +8,8 @@ password = "admin"
 session = requests.Session()
 session.auth = (username, password)
 
-
+@allure.id("TC-01")
+@allure.title("API Authentication testing")
 def test_api_auth():
     respone = session.post(url, json=data)
     assert respone.status_code == 201
