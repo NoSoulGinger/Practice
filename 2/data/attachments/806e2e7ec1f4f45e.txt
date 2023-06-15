@@ -1,1 +1,0 @@
-{'name': 'Péter', 'job': 'Criminal', 'id': '16', 'createdAt': '2023-06-15T14:37:09.699Z'}
