@@ -1,7 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Jun 15 15:04:16 GMT 2023","Thu Jun 15 15:04:16 GMT 2023","0","tests","test_api_request","","","","test_api_get_user",""
-"passed","Thu Jun 15 15:04:15 GMT 2023","Thu Jun 15 15:04:16 GMT 2023","397","tests","test_api_auth","","","","test_api_auth",""
-"passed","Thu Jun 15 15:04:16 GMT 2023","Thu Jun 15 15:04:16 GMT 2023","388","tests","test_api_post_user","","","","test_api_post_user",""
-"passed","Thu Jun 15 15:04:27 GMT 2023","Thu Jun 15 15:04:27 GMT 2023","150","tests","test_list","TestSelect","","","test_numberone",""
-"passed","Thu Jun 15 15:04:24 GMT 2023","Thu Jun 15 15:04:24 GMT 2023","69","tests","test_basic_auth","TestPopupLogin","","","test_numberone",""
-"passed","Thu Jun 15 15:04:25 GMT 2023","Thu Jun 15 15:04:26 GMT 2023","805","tests","test_example","TestTeglalap","","","test_one",""
