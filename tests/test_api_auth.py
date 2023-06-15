@@ -1,4 +1,5 @@
 import requests
+import allure
 
 url = "https://reqres.in/api/users"
 data = {"name": "Ádám", "job": "Being awesome"}

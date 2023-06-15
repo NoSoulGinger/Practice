@@ -1,5 +1,6 @@
 import requests
 import random
+import allure
 
 random_id = random.randint(1, 10)
 response = requests.get(f"https://reqres.in/api/users?id={random_id}")
