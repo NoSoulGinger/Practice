@@ -22,7 +22,7 @@ class TestPopupLogin(object):
         self.browser.quit()
 
     @allure.id("TC-04")
-    @allure.title("API auth")
-    def test_numberone(self):
+    @allure.title("Basic authentication test (Website)")
+    def test_basic_web_auth(self):
         login_success = self.browser.find_element(By.TAG_NAME, "p").text
         assert login_success == "Congratulations! You must have the proper credentials."
