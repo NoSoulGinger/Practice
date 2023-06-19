@@ -1,0 +1,2 @@
+The test was run by clicking the add element button 5 times.
+The number of visible new buttons after the clicks: 5
