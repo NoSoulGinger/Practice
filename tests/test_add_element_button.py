@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.common.exceptions import TimeoutException
 
 
 class TestAddElementButton(object):
@@ -23,7 +24,7 @@ class TestAddElementButton(object):
         self.browser.quit()
 
     @allure.id("TC-06")
-    @allure.title("Add and remove element button test")
+    @allure.title("Add element buttons test")
     def test_adding_elements(self):
         wait = WebDriverWait(self.browser, 5)
         add_element = wait.until(EC.presence_of_element_located((By.XPATH, "//div[@class='example']/button")))
@@ -33,3 +34,10 @@ class TestAddElementButton(object):
         element_list = wait.until(EC.presence_of_all_elements_located((By.XPATH, "//div[@id='elements']/button[@class='added-manually']")))
         print(f"The test was run by clicking the add element button {clicks} times.\nThe number of visible new buttons after the clicks: {len(element_list)}")
         assert len(element_list) == clicks
+        for i in range(len(element_list)):
+            element_list[i].click()
+        try:
+            buttons_after_delete = wait.until(EC.presence_of_all_elements_located((By.ID, "//div[@id='elements']/button[@class='added-manually']")))
+        except TimeoutException:
+            buttons_after_delete = 0
+        assert buttons_after_delete == 0
