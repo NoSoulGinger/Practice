@@ -14,7 +14,7 @@ class TestBrokenImage(object):
     def setup_method(self):
         service = Service(executable_path=ChromeDriverManager().install())
         options = Options()
-        # options.add_argument("--headless")
+        options.add_argument("--headless")
         options.add_experimental_option("detach", True)
         self.browser = webdriver.Chrome(service=service, options=options)
         URL = "http://the-internet.herokuapp.com/broken_images"
