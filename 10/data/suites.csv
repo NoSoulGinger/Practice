@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jun 20 08:57:29 GMT 2023","Tue Jun 20 08:57:29 GMT 2023","0","tests","test_api_request","","","","API get user test",""
+"passed","Tue Jun 20 08:57:23 GMT 2023","Tue Jun 20 08:57:29 GMT 2023","5390","tests","test_add_element_button","TestAddElementButton","","","Add element buttons test",""
+"passed","Tue Jun 20 08:57:29 GMT 2023","Tue Jun 20 08:57:29 GMT 2023","434","tests","test_api_post_user","","","","API post user test",""
+"passed","Tue Jun 20 08:57:29 GMT 2023","Tue Jun 20 08:57:29 GMT 2023","417","tests","test_api_auth","","","","API post test with authentication",""
+"passed","Tue Jun 20 08:57:32 GMT 2023","Tue Jun 20 08:57:32 GMT 2023","106","tests","test_list","TestSelect","","","Checkbox testing",""
+"passed","Tue Jun 20 08:57:31 GMT 2023","Tue Jun 20 08:57:31 GMT 2023","27","tests","test_basic_auth","TestPopupLogin","","","Basic authentication test (Website)",""
