@@ -1,0 +1,4 @@
+Total number of image on the website are 4
+<img src="asdf.jpg"> is broken.
+<img src="hjkl.jpg"> is broken.
+The page has 2 broken images
