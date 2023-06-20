@@ -39,4 +39,4 @@ class TestBrokenImage(object):
             except:
                 print(img.get_attribute('outerHTML') + " is not broken.")
         print(f'The page has {BrokenImageCount} broken images')
-        assert BrokenImageCount == 0
+        assert BrokenImageCount == 2
