@@ -1,0 +1,2 @@
+Before refresh the page has 5 elements.
+The elements are the following: ['Home', 'About', 'Contact Us', 'Portfolio', 'Gallery']
