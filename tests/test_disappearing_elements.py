@@ -7,9 +7,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver import ActionChains
 
-class TestContextMenu(object):
+class TestDisappearingElements(object):
     def setup_method(self):
         service = Service(executable_path=ChromeDriverManager().install())
         options = Options()
@@ -24,7 +23,7 @@ class TestContextMenu(object):
 
     @allure.id("TC-09")
     @allure.title("Disappearing Elements test")
-    def test_context_menu(self):
+    def test_disappearing_elements(self):
         list_of_elements = []
         wait = WebDriverWait(self.browser, 5)
         elements = wait.until(EC.presence_of_all_elements_located((By.XPATH, "//ul/li")))
