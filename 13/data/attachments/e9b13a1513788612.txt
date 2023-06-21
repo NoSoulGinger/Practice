@@ -1,5 +1,0 @@
-id : 9
-email : tobias.funke@reqres.in
-first_name : Tobias
-last_name : Funke
-avatar : https://reqres.in/img/faces/9-image.jpg
