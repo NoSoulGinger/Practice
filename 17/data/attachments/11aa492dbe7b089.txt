@@ -1,0 +1,2 @@
+Tested with selecting option 1. The name of the selected item after selecting is: Option 1
+Tested with selecting option 2. The name of the selected item after selecting is: Option 2
