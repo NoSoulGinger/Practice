@@ -13,7 +13,7 @@ class TestDropdownList(object):
     def setup_method(self):
         service = Service(executable_path=ChromeDriverManager().install())
         options = Options()
-        # options.add_argument("--headless")
+        options.add_argument("--headless")
         options.add_experimental_option("detach", True)
         self.browser = webdriver.Chrome(service=service, options=options)
         URL = "http://the-internet.herokuapp.com/dropdown"
@@ -28,6 +28,7 @@ class TestDropdownList(object):
         wait = WebDriverWait(self.browser, 5)
         options = wait.until(EC.presence_of_all_elements_located((By.XPATH, "//div[@class='example']/select[@id='dropdown']/option")))
         select = Select(self.browser.find_element(By.ID, "dropdown"))
+        assert select.first_selected_option.text == "Please select an option"
         for i in range(1, len(options)):
             select.select_by_value(str(i))
             selected_option = select.first_selected_option
